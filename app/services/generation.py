@@ -137,9 +137,8 @@ def call_gemini_with_retries(user_payload: str, max_attempts: int = 3) -> tuple[
     client = genai.Client(api_key=settings.gemini_api_key)
     models_to_try = [
         settings.gemini_model,
+        "gemini-3-flash-preview",
         "gemini-2.5-flash",
-        "gemini-2.0-flash-lite",
-        "gemini-1.5-flash",
         "gemini-flash-latest",
     ]
     # de-dupe preserving order

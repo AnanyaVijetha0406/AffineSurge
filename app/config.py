@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     mongodb_uri: str = "mongodb://localhost:27017"
     mongodb_db: str = "ct200_qa"
     database_url: str = "sqlite:///./ct200.db"
-    gemini_model: str = "gemini-2.0-flash"
+    gemini_model: str = "gemini-3-flash-preview"
     document_slug: str = "ct200-manual"
 
 
