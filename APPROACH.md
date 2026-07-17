@@ -62,7 +62,7 @@ Match nodes across versions by **`node_key`** (section-number based).
 
 ## LLM design
 
-- Provider: Gemini (`gemini-2.0-flash`)
+- Provider: Gemini (`gemini-3-flash-preview`)
 - Prompt asks for 3–5 QA ideas as **strict JSON**
 - `response_mime_type=application/json`
 - Validate with Pydantic; on failure, retry up to 3× with repair hint
